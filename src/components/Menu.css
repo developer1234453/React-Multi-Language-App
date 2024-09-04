@@ -1,0 +1,68 @@
+/* src/components/Menu.css */
+.menu {
+  position: fixed; /* Fixed sidebar position */
+  top: 0;
+  left: 0;
+  width: 250px; /* Width of the sidebar */
+  height: 100vh; /* Full viewport height */
+  background-color: #d32f7b; /* Dark pink background color */
+  color: #fff; /* White text color */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+}
+
+.menu-heading {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0;
+  padding-bottom: 20px; /* Space below heading */
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.menu ul li:hover {
+  background-color: #c2185b; /* Slightly lighter dark pink on hover */
+}
+
+.menu .settings {
+  margin-top: auto; /* Push settings section to the bottom */
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #d32f7b; /* Match sidebar background color */
+  padding: 8px 10px; /* Ensure padding for spacing */
+  margin-bottom: 15px; /* Move the settings section up slightly */
+}
+
+.menu .settings .settings-icon {
+  font-size: 24px; /* Size of the icon */
+}
+
+.menu .settings select {
+  margin-left: 10px; /* Space between the icon and dropdown */
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  background: #b71c1c; /* Darker pink for dropdown */
+  color: #fff;
+  font-size: 14px;
+}
